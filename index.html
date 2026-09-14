@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <title>Wha11y - I can spot the main barriers to digital accessibility</title>
     <style>
-      hgroup h1,
-      footer p {
+      hgroup h1 {
         display: flex;
         align-items: center;
         gap: .5rem;
       }
 
-      hgroup h1 svg,
-      footer p svg {
+      hgroup h1 svg {
         height: 2rem;
         width: 1.6rem;
         flex: none;
@@ -23,6 +21,11 @@
       
       footer {
         text-align: center;
+      }
+      
+      footer svg {
+        height: 3rem;
+        width: 2.4rem;
       }
       
       .progress {
@@ -156,12 +159,10 @@
     </main>
 
     <footer class="container">
-      <p>
-        <svg aria-hidden="true" focusable="false">
-          <use href="#logo"></use>
-        </svg>
-        2026
-      </p>
+      <svg aria-hidden="true" focusable="false">
+        <use href="#logo"></use>
+      </svg>
+      <p>2026</p>
     </footer>
   </body>
 </html>
