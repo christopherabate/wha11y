@@ -1,28 +1,5 @@
 # Référentiel de bonnes pratiques d'accessibilité numérique
 
-## À propos de ce référentiel
-
-Ce référentiel propose 11 points pour examiner l'accessibilité de
-différents supports : sites et applications web, applications mobiles,
-documents bureautiques et PDF, communications numériques, maquettes de
-conception et contenus audio ou vidéo.
-
-Pour chaque point, il présente le principe, l'objectif concret, la règle
-à appliquer, les problèmes potentiels, des exemples, les personnes
-concernées, les difficultés possibles et les références WCAG 2.2
-pertinentes.
-
-Les WCAG 2.2 portent sur les contenus web. Leurs critères peuvent aussi
-être pertinents pour certaines applications et certains documents
-numériques, mais leur applicabilité doit être vérifiée selon le support
-et le contexte. Les références ci-dessous sont des correspondances
-utiles, pas une déclaration de conformité complète. Les niveaux A, AA et
-AAA sont ceux des WCAG.
-
-Référence générale : [WCAG 2.2 --- version
-française](https://www.w3.org/Translations/WCAG22-fr/) · [Vue d'ensemble
-des WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/fr)
-
 ## 1. Organiser clairement les informations
 
 **Catégorie :** Structure
