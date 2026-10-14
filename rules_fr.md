@@ -1,5 +1,28 @@
 # Référentiel de bonnes pratiques d'accessibilité numérique
 
+## À propos de ce référentiel
+
+Ce référentiel propose 11 points pour examiner l'accessibilité de
+différents supports : sites et applications web, applications mobiles,
+documents bureautiques et PDF, communications numériques, maquettes de
+conception et contenus audio ou vidéo.
+
+Pour chaque point, il présente le principe, l'objectif concret, la règle
+à appliquer, les problèmes potentiels, des exemples, les personnes
+concernées, les difficultés possibles et les références WCAG 2.2
+pertinentes.
+
+Les WCAG 2.2 portent sur les contenus web. Leurs critères peuvent aussi
+être pertinents pour certaines applications et certains documents
+numériques, mais leur applicabilité doit être vérifiée selon le support
+et le contexte. Les références ci-dessous sont des correspondances
+utiles, pas une déclaration de conformité complète. Les niveaux A, AA et
+AAA sont ceux des WCAG.
+
+Référence générale : [WCAG 2.2 - version
+française](https://www.w3.org/Translations/WCAG22-fr/) · [Vue d'ensemble
+des WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/fr)
+
 ## 1. Organiser clairement les informations
 
 **Catégorie :** Structure
@@ -36,13 +59,13 @@ de repères clairs pour comprendre l'organisation d'un contenu.
 **Difficultés possibles** Ne pas comprendre comment le contenu est
 organisé, manquer une section ou ne pas retrouver une information.
 
-**Références WCAG 2.2** - [1.3.1 --- Information et relations
+**Références WCAG 2.2** - [1.3.1 - Information et relations
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)
 : les relations et la structure doivent pouvoir être déterminées par un
-programme. - [2.4.6 --- En-têtes et étiquettes
+programme. - [2.4.6 - En-têtes et étiquettes
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html)
 : les titres et étiquettes décrivent le sujet ou la fonction. - [2.4.10
---- En-têtes de section
+- En-têtes de section
 (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html)
 : pertinent pour une structuration plus poussée, au niveau AAA.
 
@@ -82,12 +105,12 @@ difficultés à traiter plusieurs consignes successives.
 **Difficultés possibles** Ne pas savoir par où commencer, perdre le fil,
 réaliser une action dans le mauvais ordre ou manquer une étape.
 
-**Références WCAG 2.2** - [1.3.2 --- Séquence compréhensible
+**Références WCAG 2.2** - [1.3.2 - Séquence compréhensible
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html)
-: l'ordre de lecture doit préserver le sens. - [2.4.3 --- Parcours du
+: l'ordre de lecture doit préserver le sens. - [2.4.3 - Parcours du
 focus (A)](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
 : l'ordre de navigation au clavier doit préserver le sens et
-l'opérabilité. - [3.2.3 --- Navigation cohérente
+l'opérabilité. - [3.2.3 - Navigation cohérente
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html)
 : les mécanismes de navigation répétés apparaissent dans le même ordre
 relatif.
@@ -135,19 +158,19 @@ ou de sous-titres pour accéder aux informations sonores.
 par l'image, le son ou la vidéo, ou ne comprendre qu'une partie du
 contenu.
 
-**Références WCAG 2.2** - [1.1.1 --- Contenu non textuel
+**Références WCAG 2.2** - [1.1.1 - Contenu non textuel
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
 : alternatives textuelles aux contenus non textuels, avec des exceptions
-définies. - [1.2.1 --- Audio seul et vidéo seule (préenregistrés)
+définies. - [1.2.1 - Audio seul et vidéo seule (préenregistrés)
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html). -
-[1.2.2 --- Sous-titres (préenregistrés)
+[1.2.2 - Sous-titres (préenregistrés)
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html). -
-[1.2.3 --- Audiodescription ou version de remplacement pour un média
+[1.2.3 - Audiodescription ou version de remplacement pour un média
 préenregistré
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html). -
-[1.2.5 --- Audiodescription (préenregistrée)
+[1.2.5 - Audiodescription (préenregistrée)
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html). -
-[1.2.4 --- Sous-titres (en direct)
+[1.2.4 - Sous-titres (en direct)
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html),
 lorsque le contenu est diffusé en direct.
 
@@ -193,15 +216,15 @@ automatiques.
 **Difficultés possibles** Perdre une information, ne pas avoir le temps
 de la lire, perdre sa place ou ressentir une gêne liée aux mouvements.
 
-**Références WCAG 2.2** - [2.2.2 --- Mettre en pause, arrêter, masquer
+**Références WCAG 2.2** - [2.2.2 - Mettre en pause, arrêter, masquer
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html) :
 pour certains contenus en mouvement, clignotants ou qui se mettent à
-jour automatiquement. - [2.2.1 --- Réglage du délai
+jour automatiquement. - [2.2.1 - Réglage du délai
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html)
 : pour les limites de temps, sous réserve des exceptions prévues. -
-[2.3.1 --- Pas plus de trois flashs ou sous le seuil critique
+[2.3.1 - Pas plus de trois flashs ou sous le seuil critique
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html)
-: pour les flashs. - [2.2.6 --- Délais d'inactivité
+: pour les flashs. - [2.2.6 - Délais d'inactivité
 (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/timeouts.html) :
 information sur les délais d'inactivité, au niveau AAA.
 
@@ -242,16 +265,16 @@ consultent le contenu dans des conditions d'affichage difficiles.
 **Difficultés possibles** Lire difficilement, confondre des éléments ou
 ne pas repérer une information importante.
 
-**Références WCAG 2.2** - [1.4.3 --- Contraste (minimum)
+**Références WCAG 2.2** - [1.4.3 - Contraste (minimum)
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)
-: contraste du texte. - [1.4.11 --- Contraste des éléments non textuels
+: contraste du texte. - [1.4.11 - Contraste des éléments non textuels
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)
 : contraste de certains composants d'interface et éléments graphiques
-nécessaires à la compréhension. - [1.4.4 --- Redimensionnement du texte
+nécessaires à la compréhension. - [1.4.4 - Redimensionnement du texte
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html). -
-[1.4.12 --- Espacement du texte
+[1.4.12 - Espacement du texte
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html). -
-[1.4.10 --- Redistribution
+[1.4.10 - Redistribution
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) : contenu
 consultable sans défilement dans deux directions, dans les conditions
 prévues par le critère.
@@ -292,7 +315,7 @@ affichage en niveaux de gris ou des réglages qui modifient les couleurs.
 **Difficultés possibles** Ne pas distinguer une erreur, une catégorie,
 un état ou une information signalée uniquement par une couleur.
 
-**Références WCAG 2.2** - [1.4.1 --- Utilisation de la couleur
+**Références WCAG 2.2** - [1.4.1 - Utilisation de la couleur
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html) : la
 couleur ne doit pas être le seul moyen visuel de transmettre une
 information, d'indiquer une action ou de distinguer un élément.
@@ -336,13 +359,13 @@ besoin de réglages spécifiques pour lire et utiliser le contenu.
 défiler la page dans plusieurs directions ou ne plus pouvoir réaliser
 une action après adaptation.
 
-**Références WCAG 2.2** - [1.4.4 --- Redimensionnement du texte
+**Références WCAG 2.2** - [1.4.4 - Redimensionnement du texte
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html). -
-[1.4.10 --- Redistribution
+[1.4.10 - Redistribution
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html). -
-[1.4.12 --- Espacement du texte
+[1.4.12 - Espacement du texte
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html). -
-[1.3.1 --- Information et relations
+[1.3.1 - Information et relations
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)
 : pertinent lorsque la structure doit rester disponible pour différentes
 présentations.
@@ -384,21 +407,21 @@ qui ont des difficultés à effectuer des gestes précis ou complexes.
 un geste demandé ou terminer une tâche avec le moyen de commande
 disponible.
 
-**Références WCAG 2.2** - [2.1.1 --- Clavier
+**Références WCAG 2.2** - [2.1.1 - Clavier
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html). -
-[2.1.2 --- Pas de piège au clavier
+[2.1.2 - Pas de piège au clavier
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html). -
-[2.4.7 --- Visibilité du focus
+[2.4.7 - Visibilité du focus
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html). -
-[2.4.11 --- Focus non masqué (minimum)
+[2.4.11 - Focus non masqué (minimum)
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html). -
-[2.5.1 --- Gestes de manipulation
+[2.5.1 - Gestes de manipulation
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html). -
-[2.5.7 --- Mouvements de glissement
+[2.5.7 - Mouvements de glissement
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html). -
-[2.5.8 --- Taille de la cible (minimum)
+[2.5.8 - Taille de la cible (minimum)
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html). -
-[2.5.6 --- Mécanismes d'entrée simultanés
+[2.5.6 - Mécanismes d'entrée simultanés
 (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/concurrent-input-mechanisms.html)
 : pertinent pour ne pas restreindre inutilement les mécanismes d'entrée.
 
@@ -441,19 +464,19 @@ retrouver une rubrique ou reprendre leur lecture après une interruption.
 ou une rubrique, ou devoir parcourir tout le contenu pour atteindre une
 information.
 
-**Références WCAG 2.2** - [2.4.1 --- Contourner des blocs
+**Références WCAG 2.2** - [2.4.1 - Contourner des blocs
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html). -
-[2.4.2 --- Titre de page
+[2.4.2 - Titre de page
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html). -
-[2.4.5 --- Accès multiples
+[2.4.5 - Accès multiples
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html). -
-[2.4.6 --- En-têtes et étiquettes
+[2.4.6 - En-têtes et étiquettes
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html). -
-[2.4.7 --- Visibilité du focus
+[2.4.7 - Visibilité du focus
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html). -
-[3.2.3 --- Navigation cohérente
+[3.2.3 - Navigation cohérente
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html). -
-[2.4.4 --- Fonction du lien (selon le contexte)
+[2.4.4 - Fonction du lien (selon le contexte)
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
 
 ## 10. Aider à comprendre les informations et les actions à réaliser
@@ -493,19 +516,19 @@ implicites, ainsi que celles qui découvrent un service ou une démarche.
 **Difficultés possibles** Ne pas comprendre ce qui est demandé, quelles
 informations fournir ou quelle action effectuer.
 
-**Références WCAG 2.2** - [3.1.1 --- Langue de la page
+**Références WCAG 2.2** - [3.1.1 - Langue de la page
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html). -
-[3.1.2 --- Langue d'un passage
+[3.1.2 - Langue d'un passage
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html). -
-[3.1.3 --- Mots rares
+[3.1.3 - Mots rares
 (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/unusual-words.html). -
-[3.1.4 --- Abréviations
+[3.1.4 - Abréviations
 (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/abbreviations.html). -
-[3.1.5 --- Niveau de lecture
+[3.1.5 - Niveau de lecture
 (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html). -
-[3.2.4 --- Identification cohérente
+[3.2.4 - Identification cohérente
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html). -
-[3.3.2 --- Étiquettes ou instructions
+[3.3.2 - Étiquettes ou instructions
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html). -
 **Limite importante :** les WCAG ne prescrivent pas un langage FALC
 général pour tous les contenus. Un langage clair peut aller au-delà de
@@ -552,17 +575,68 @@ reprendre leur tâche sans perdre les informations déjà saisies.
 comment la corriger, perdre les informations saisies ou devoir
 recommencer.
 
-**Références WCAG 2.2** - [3.3.1 --- Identification des erreurs
+**Références WCAG 2.2** - [3.3.1 - Identification des erreurs
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html). -
-[3.3.3 --- Suggestion après une erreur
+[3.3.3 - Suggestion après une erreur
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html). -
-[3.3.4 --- Prévention des erreurs (juridiques, financières, données)
+[3.3.4 - Prévention des erreurs (juridiques, financières, données)
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html). -
-[3.3.7 --- Saisie redondante
+[3.3.7 - Saisie redondante
 (A)](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html) :
 éviter de demander à nouveau certaines informations déjà fournies au
-cours d'un même processus, dans les conditions du critère. - [4.1.3 ---
+cours d'un même processus, dans les conditions du critère. - [4.1.3 -
 Messages d'état
 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 : pour les messages de statut qui doivent pouvoir être déterminés par un
 programme sans recevoir le focus.
+
+## Principes transversaux
+
+### Compatibilité avec les technologies d'assistance
+
+La compatibilité avec les technologies d'assistance doit être vérifiée
+dans tous les points où elle est pertinente. Cela comprend notamment : -
+la restitution de la structure et de l'ordre de lecture ; - l'accès aux
+alternatives textuelles et aux sous-titres ; - la possibilité de
+contrôler les contenus qui changent ; - l'accès aux informations après
+adaptation de l'affichage ; - l'utilisation des commandes au clavier ou
+avec un dispositif adapté ; - la restitution des repères de navigation
+et des messages d'erreur.
+
+### Des besoins qui peuvent se recouper
+
+Une même personne peut être concernée par plusieurs points, mais pas
+nécessairement par tous. Les difficultés dépendent des besoins d'accès,
+du contenu, du support et du contexte d'utilisation. Les personnes
+concernées ne se limitent pas aux personnes handicapées : une difficulté
+peut aussi apparaître temporairement, avec un appareil particulier ou
+dans un environnement perturbant.
+
+### Distinguer les points 1, 2 et 9
+
+-   **Point 1 - Organisation :** comprendre comment le contenu est
+    organisé.
+-   **Point 2 - Ordre :** suivre les informations et les étapes dans
+    le bon ordre.
+-   **Point 9 - Navigation :** savoir où l'on se trouve et retrouver
+    son chemin.
+
+Ces points sont complémentaires et peuvent être vérifiés séparément.
+
+### Comment utiliser les références WCAG
+
+Les références indiquées sont les critères qui présentent le lien le
+plus direct avec chaque point. Elles ne constituent pas une liste
+exhaustive de tous les critères applicables au support examiné. Les
+niveaux A, AA et AAA indiquent le niveau WCAG du critère, et non une
+priorité attribuée par ce référentiel.
+
+Les WCAG définissent des critères de succès testables pour les contenus
+web. Les recommandations de ce document peuvent être plus larges,
+notamment pour les documents, les communications, les maquettes et les
+contenus audio ou vidéo. Il faut donc vérifier l'applicabilité de chaque
+référence plutôt que de supposer qu'un critère s'applique identiquement
+à tous les supports.
+
+Référence de méthode : [Comprendre les WCAG 2.2 - documents
+d'accompagnement du W3C](https://www.w3.org/WAI/WCAG22/Understanding/).
