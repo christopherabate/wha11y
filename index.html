@@ -1,170 +1,460 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <title>Wha11y - I can spot the main barriers to digital accessibility</title>
-    <style>
-      hgroup h1 {
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-      }
 
-      hgroup h1 svg {
-        height: 2rem;
-        width: 1.6rem;
-        flex: none;
-      }
-      
-      footer aside {
-        text-align: center;
-      }
-      
-      footer aside svg {
-        height: 3rem;
-        width: 2.4rem;
-      }
-      
-      .progress {
-        position: sticky;
-        top: 0;
-        background: var(--pico-background-color);
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <title>Wha11y - I can spot the main barriers to digital accessibility</title>
+  <style>
+    hgroup h1 {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
 
-      form {
-        background: var(--pico-card-sectioning-background-color);
-        border-left: var(--pico-border-radius) solid var(--pico-primary-border);
-        border-radius: var(--pico-border-radius);
-        padding: var(--pico-spacing);
-      }
-    </style>
-  </head>
-  <body>
-    <svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden">
-      <defs>
-        <symbol id="logo" viewBox="0 0 80 100">
-          <path d="M13.19 1.98a15 15 0 0 0-.75.81l-.47.57a15 15 0 0 0-1.4 2.16 15 15 0 0 0-.48 1l-.05.12-.1.21a15 15 0 0 0-.92 3.17 15 15 0 0 0-.23 2.57 14 14 0 0 0 .08 1.47 15 15 0 0 0 .38 2.17 15 15 0 0 0 .43 1.4 16 16 0 0 0 1.45 2.98 15 15 0 0 0 1.07 1.49 15 15 0 0 0 .73.83l-10 10a10 10 0 0 0-.96 1.11 10 10 0 0 0-1.2 2.14 10 10 0 0 0-.57 1.87A10 10 0 0 0 0 40v40a10 10 0 0 0 .3 2.43 10 10 0 0 0 2.3 4.29 10 10 0 0 0 1.85 1.6 10 10 0 0 0 2.65 1.24 10 10 0 0 0 1.92.4A10 10 0 0 0 10 90h60a10 10 0 0 0 1.47-.11 10 10 0 0 0 1.9-.48 10 10 0 0 0 2.18-1.1 10 10 0 0 0 1.52-1.24 10 10 0 0 0 .96-1.11 10 10 0 0 0 1.2-2.14 10 10 0 0 0 .72-2.84A10 10 0 0 0 80 80V50a10 10 0 0 0-.11-1.47 10 10 0 0 0-.48-1.9 10 10 0 0 0-1.1-2.18 10 10 0 0 0-1.24-1.52 10 10 0 0 0-1.11-.96 10 10 0 0 0-1.69-1 10 10 0 0 0-2.8-.86 10 10 0 0 0-1.47-.1H30a10 10 0 0 1-1.47-.12 10 10 0 0 1-1.9-.48 10 10 0 0 1-2.97-1.68 10 10 0 0 1-2.47-3.02 10 10 0 0 1-1.08-3.24A10 10 0 0 1 20 30l.2.19.32.32.55.5.57.46a15 15 0 0 0 3.49 2.02 16 16 0 0 0 2.45.78 15 15 0 0 0 2.18.33l.74.04a15 15 0 0 0 1.1-.01 14 14 0 0 0 1.1-.1 15 15 0 0 0 1.8-.34 16 16 0 0 0 1.41-.43l.69-.27.34-.14a16 16 0 0 0 1.63-.85 15 15 0 0 0 2.9-2.25L34.4 23.2a10 10 0 0 0-1.12-.95 10 10 0 0 0-1.68-1 10 10 0 0 0-3.3-.93 10 10 0 0 0-1.46-.03 9 9 0 0 0-.98.1 10 10 0 0 0-2.8.85 10 10 0 0 0-1.29.72 10 10 0 0 0-1.5 1.23 10 10 0 0 0 .64-.71 10 10 0 0 0 .85-1.2 10 10 0 0 0 1.41-4.66 10 10 0 0 0-.1-1.95 10 10 0 0 0-.48-1.9 10 10 0 0 0-1.1-2.19 10 10 0 0 0-.9-1.16l-.33-.36-.02-.02zm51.76 47.97a5 5 0 0 1 5 5v20a5 5 0 1 1-10 0v-20a5 5 0 0 1 5-5m-20 .05a5 5 0 0 1 5 4.95v20a5 5 0 1 1-10 0v-20a5 5 0 0 1 5-4.95"/>
-        </symbol>
-      </defs>
-    </svg>
-    
-    <header class="container">
-      <hgroup>
-        <h1>
-          <svg aria-hidden="true" focusable="false">
-            <use href="#logo"></use>
-          </svg>
-          Wha11y
-        </h1>
-        <p>I can spot the main barriers to digital accessibility</p>
-      </hgroup>
+    hgroup h1 svg {
+      height: 2rem;
+      width: 1.6rem;
+      flex: none;
+    }
 
-      <p>
-        Accessibility testing means <strong>spotting barriers</strong> and understanding
-        <strong>how they affect people</strong>.<br />
-        The goal is simple: <strong>know what to look for</strong>,
-        <strong>how to test it</strong>, and <strong>why it matters</strong>.
-      </p>
+    footer aside {
+      text-align: center;
+    }
 
-      <nav>
-        <ol>
-          <li><a href="#" role="button">Structure</a></li>
-          <li><a href="#" role="button">Content</a></li>
-          <li><a href="#" role="button">Visuals</a></li>
-          <li><a href="#" role="button">Adaptability</a></li>
-          <li><a href="#" role="button">Interactions</a></li>
-          <li><a href="#" role="button">Feedback</a></li>
-        </ol>
-      </nav>
-    </header>
+    footer aside svg {
+      height: 3rem;
+      width: 2.4rem;
+    }
 
-    <label class="container progress">
-      <strong>Progress:</strong> 3/11 principles validated
-      <progress value="3" max="11"></progress>
-    </label>
-    
-    <main class="container">
-      <h2>Module 1: Structure</h2>
-      
-      <article>
-        <header>
-          <h3>Principle header</h3>
-          <p>Principle subheader</p>
-        </header>
-        <section>
-          <form>
-            Section + Form
-          </form>
-        </section>
-        <section>
-          Section
-        </section>
-        <footer>Footer</footer>
-      </article>
-      
-      <article>
-        <header>
-          <h3>Principle header</h3>
-          <p>Principle subheader</p>
-        </header>
-        <section>
-          <form>
-            Section + Form
-          </form>
-        </section>
-        <section>
-          Section
-        </section>
-        <footer>Footer</footer>
-      </article>
-      <h2>Module 2: Content</h2>
-      
-      <article>
-        <header>
-          <h3>Principle header</h3>
-          <p>Principle subheader</p>
-        </header>
-        <section>
-          <form>
-            Section + Form
-          </form>
-        </section>
-        <section>
-          Section
-        </section>
-        <footer>Footer</footer>
-      </article>
-    </main>
+    .progress {
+      position: sticky;
+      top: 0;
+      background: var(--pico-background-color);
+    }
 
-    <footer class="container">
-      <dl>
-        <dt>Why <strong><dfn>Wha11y</dfn></strong>?</dt>
-        <dd>
-          <p>The <strong>Wh</strong> comes from question words such as:</p>
+    form {
+      background: var(--pico-card-sectioning-background-color);
+      border-left: var(--pico-border-radius) solid var(--pico-primary-border);
+      border-radius: var(--pico-border-radius);
+      padding: var(--pico-spacing);
+    }
+  </style>
+</head>
 
-          <ul>
-            <li><strong>Who</strong> may have a problem?</li>
-            <li><strong>What</strong> kind of problem?</li>
-            <li><strong>Why</strong> is it a barrier?</li>
-          </ul>
-          
-          <p>
-            <strong>A11y</strong> is a short form of <em>accessibility</em>.
-            The <strong>11</strong> stands for the 11 letters between
-            the <strong>a</strong> and the <strong>y</strong>.
-          </p>
-        </dd>
-      </dl>
+<body>
+  <svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden">
+    <defs>
+      <symbol id="logo" viewBox="0 0 80 100">
+        <path
+          d="M13.19 1.98a15 15 0 0 0-.75.81l-.47.57a15 15 0 0 0-1.4 2.16 15 15 0 0 0-.48 1l-.05.12-.1.21a15 15 0 0 0-.92 3.17 15 15 0 0 0-.23 2.57 14 14 0 0 0 .08 1.47 15 15 0 0 0 .38 2.17 15 15 0 0 0 .43 1.4 16 16 0 0 0 1.45 2.98 15 15 0 0 0 1.07 1.49 15 15 0 0 0 .73.83l-10 10a10 10 0 0 0-.96 1.11 10 10 0 0 0-1.2 2.14 10 10 0 0 0-.57 1.87A10 10 0 0 0 0 40v40a10 10 0 0 0 .3 2.43 10 10 0 0 0 2.3 4.29 10 10 0 0 0 1.85 1.6 10 10 0 0 0 2.65 1.24 10 10 0 0 0 1.92.4A10 10 0 0 0 10 90h60a10 10 0 0 0 1.47-.11 10 10 0 0 0 1.9-.48 10 10 0 0 0 2.18-1.1 10 10 0 0 0 1.52-1.24 10 10 0 0 0 .96-1.11 10 10 0 0 0 1.2-2.14 10 10 0 0 0 .72-2.84A10 10 0 0 0 80 80V50a10 10 0 0 0-.11-1.47 10 10 0 0 0-.48-1.9 10 10 0 0 0-1.1-2.18 10 10 0 0 0-1.24-1.52 10 10 0 0 0-1.11-.96 10 10 0 0 0-1.69-1 10 10 0 0 0-2.8-.86 10 10 0 0 0-1.47-.1H30a10 10 0 0 1-1.47-.12 10 10 0 0 1-1.9-.48 10 10 0 0 1-2.97-1.68 10 10 0 0 1-2.47-3.02 10 10 0 0 1-1.08-3.24A10 10 0 0 1 20 30l.2.19.32.32.55.5.57.46a15 15 0 0 0 3.49 2.02 16 16 0 0 0 2.45.78 15 15 0 0 0 2.18.33l.74.04a15 15 0 0 0 1.1-.01 14 14 0 0 0 1.1-.1 15 15 0 0 0 1.8-.34 16 16 0 0 0 1.41-.43l.69-.27.34-.14a16 16 0 0 0 1.63-.85 15 15 0 0 0 2.9-2.25L34.4 23.2a10 10 0 0 0-1.12-.95 10 10 0 0 0-1.68-1 10 10 0 0 0-3.3-.93 10 10 0 0 0-1.46-.03 9 9 0 0 0-.98.1 10 10 0 0 0-2.8.85 10 10 0 0 0-1.29.72 10 10 0 0 0-1.5 1.23 10 10 0 0 0 .64-.71 10 10 0 0 0 .85-1.2 10 10 0 0 0 1.41-4.66 10 10 0 0 0-.1-1.95 10 10 0 0 0-.48-1.9 10 10 0 0 0-1.1-2.19 10 10 0 0 0-.9-1.16l-.33-.36-.02-.02zm51.76 47.97a5 5 0 0 1 5 5v20a5 5 0 1 1-10 0v-20a5 5 0 0 1 5-5m-20 .05a5 5 0 0 1 5 4.95v20a5 5 0 1 1-10 0v-20a5 5 0 0 1 5-4.95" />
+      </symbol>
+    </defs>
+  </svg>
 
-      <aside>
+  <header class="container">
+    <hgroup>
+      <h1>
         <svg aria-hidden="true" focusable="false">
           <use href="#logo"></use>
         </svg>
-        <p><a href="https://github.com/christopherabate">@christopherabate</a> 2026</p>
-      </aside>
-    </footer>
-  </body>
+        Wha11y
+      </h1>
+      <p>I can spot the main barriers to digital accessibility</p>
+    </hgroup>
+
+    <p>
+      Accessibility testing means <strong>spotting barriers</strong> and understanding
+      <strong>how they affect people</strong>.<br />
+      The goal is simple: <strong>know what to look for</strong>,
+      <strong>how to test it</strong>, and <strong>why it matters</strong>.
+    </p>
+
+    <nav>
+      <ol>
+        <li><a href="#" role="button">Structure</a></li>
+        <li><a href="#" role="button">Content</a></li>
+        <li><a href="#" role="button">Visuals</a></li>
+        <li><a href="#" role="button">Adaptability</a></li>
+        <li><a href="#" role="button">Interactions</a></li>
+        <li><a href="#" role="button">Feedback</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <label class="container progress">
+    <strong>Progress:</strong> 3/11 principles validated
+    <progress value="3" max="11"></progress>
+  </label>
+
+  <main class="container">
+
+    <article>
+      <header>
+        <h2>Définir un titre principal clair.</h2>
+        <p>Permettre à chaque personne d'identifier rapidement le sujet de la page, de l'écran ou du document.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Donner un titre clair et représentatif du contenu de chaque page.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Donner un titre clair et représentatif du contenu de chaque écran.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Donner un titre clair et représentatif du contenu du document.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Indiquer la règle de construction du titre.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Structurer le contenu avec des titres et des regroupements clairs.</h2>
+        <p>Permettre à chaque personne de comprendre l'organisation du contenu, de repérer les informations importantes
+          et de trouver facilement des informations.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Utiliser des niveaux de titres hiérarchisés pour structurer la page. Utiliser les éléments adaptés pour
+          structurer les contenus et les zones de la page.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Utiliser des titres clairs pour structurer les écrans. Regrouper les éléments liés entre eux.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Utiliser des niveaux de titres hiérarchisés pour structurer le document. Utiliser les listes et les styles
+          définis pour structurer les contenus.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Indiquer les niveaux de titres et les contenus à regrouper.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Donner une alternative textuelle aux images, aux sons et aux vidéos.</h2>
+        <p>Permettre à chaque personne d'accéder aux informations transmises par les images, les sons et les vidéos,
+          quelles que soient ses capacités sensorielles ou ses conditions de consultation.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Décrire les images porteuses d'information. Prévoir des sous-titres pour les vidéos, une transcription pour
+          les contenus audio et, lorsque nécessaire, une audiodescription.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Décrire les images porteuses d'information. Prévoir des sous-titres pour les vidéos, une transcription pour
+          les contenus audio et, lorsque nécessaire, une audiodescription.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Décrire les images porteuses d'information. Prévoir des sous-titres pour les vidéos, une transcription pour
+          les contenus audio et, lorsque nécessaire, une audiodescription.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Indiquer les images décoratives et la règle de construction des textes alternatifs pour les images porteuses
+          d'information. Préciser les besoins en sous-titres pour les vidéos, en transcription pour les contenus audio
+          et, lorsque nécessaire, en audiodescription.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Donner aux textes et aux éléments visuels une taille et un contraste suffisants.</h2>
+        <p>Permettre à chaque personne de lire et de distinguer les contenus dans de bonnes conditions, selon ses
+          capacités visuelles et son équipement.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Utiliser une police d'écriture et des tailles de texte lisibles. Assurer un contraste suffisant entre les
+          textes, les éléments visuels et leur arrière-plan.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Utiliser une police d'écriture et des tailles de texte lisibles. Assurer un contraste suffisant entre les
+          textes, les éléments visuels et leur arrière-plan.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Utiliser une police d'écriture et des tailles de texte lisibles. Assurer un contraste suffisant entre les
+          textes, les éléments visuels et leur arrière-plan.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Utiliser une police d'écriture et des tailles de texte lisibles. Assurer un contraste suffisant entre les
+          textes, les éléments visuels et leur arrière-plan.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Utiliser un autre moyen que la couleur pour transmettre les informations.</h2>
+        <p>Permettre à chaque personne d'identifier et de comprendre les informations, même si elle ne perçoit pas
+          certaines couleurs ou distingue difficilement leurs nuances.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Ajouter un texte, une icône ou un autre repère pour transmettre les informations qui reposent sur la couleur.
+        </p>
+
+        <h3>Applications mobiles</h3>
+        <p>Ajouter un texte, une icône ou un autre repère pour transmettre les informations qui reposent sur la couleur.
+        </p>
+
+        <h3>Documents et communications</h3>
+        <p>Ajouter un texte, une icône ou un autre repère pour transmettre les informations qui reposent sur la couleur.
+        </p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Ajouter un texte, une icône ou un autre repère pour transmettre les informations qui reposent sur la couleur.
+        </p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Permettre différents modes d'interaction.</h2>
+        <p>Permettre à chaque personne d'utiliser les fonctionnalités selon ses capacités, ses besoins et son
+          équipement, en choisissant le mode d'interaction qui lui convient.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Permettre d'utiliser toutes les fonctionnalités au clavier. Identifier l'élément qui reçoit le focus. Prévoir
+          des alternatives aux gestes complexes.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Permettre d'utiliser toutes les fonctionnalités avec différents modes d'interaction. Identifier l'élément qui
+          reçoit le focus. Prévoir des alternatives aux gestes complexes.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Permettre d'utiliser toutes les fonctionnalités au clavier.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Prévoir un indicateur visuel pour les éléments qui reçoivent le focus. Indiquer les comportements attendus
+          pour les interactions.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Permettre un affichage adapté aux préférences.</h2>
+        <p>Permettre à chaque personne d'adapter la présentation et l'affichage des contenus à ses besoins et à ses
+          préférences, sans perte d'information ni de fonctionnalité.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Permettre d'agrandir les contenus sans perte d'information. Adapter le contenu à la taille de la fenêtre.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Permettre d'agrandir les contenus sans perte d'information. Adapter le contenu à l'orientation de l'écran.
+        </p>
+
+        <h3>Documents et communications</h3>
+        <p>Utiliser du texte sélectionnable plutôt que du texte sous forme d'image. Préférer une mise en page sans
+          tableaux.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Prévoir les adaptations de l'affichage selon le support et préciser le comportement attendu lorsque
+          l'affichage change.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Donner des instructions précises.</h2>
+        <p>Permettre à chaque personne de comprendre ce qui est attendu, de renseigner correctement les informations
+          demandées et de réaliser les actions sans ambiguïté.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Identifier les champs obligatoires et les formats attendus. Associer chaque champ à un libellé clair.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Identifier les champs obligatoires et les formats attendus. Associer chaque champ à un libellé clair.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Préférer des contenus simples, précis et organisés.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Identifier les champs obligatoires et les formats attendus. Associer chaque champ à un libellé clair.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Signaler les erreurs et expliquer comment les corriger.</h2>
+        <p>Permettre à chaque personne de repérer une erreur, d'en comprendre la cause et de la corriger facilement.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Identifier le champ en erreur et décrire le problème par un message texte. Expliquer comment corriger
+          l'erreur.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Identifier le champ en erreur et décrire le problème par un message texte. Expliquer comment corriger
+          l'erreur.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Identifier le champ en erreur et décrire le problème par un message texte. Expliquer comment corriger
+          l'erreur.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Prévoir un état d'erreur avec un message et une indication de correction.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Donner le contrôle sur les animations et les changements de contenu.</h2>
+        <p>Permettre à chaque personne de consulter les contenus à son rythme et de limiter les distractions liées aux
+          animations et aux changements automatiques.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Permettre de mettre en pause, d'arrêter ou de masquer les contenus en mouvement. Respecter les préférences de
+          réduction des animations.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Permettre de mettre en pause, d'arrêter ou de masquer les contenus en mouvement. Respecter les préférences de
+          réduction des animations.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Éviter les animations automatiques.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Prévoir la possibilité de mettre en pause, d'arrêter ou de masquer les contenus en mouvement.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+    <article>
+      <header>
+        <h2>Rendre les actions faciles à trouver et à utiliser.</h2>
+        <p>Permettre à chaque personne d'identifier les actions disponibles, de comprendre leur fonction et de les
+          réaliser facilement.</p>
+      </header>
+
+      <section>
+        <form></form>
+      </section>
+
+      <section>
+        <h3>Sites et applications Web</h3>
+        <p>Donner un nom clair aux liens, boutons et autres éléments interactifs. Rendre les zones cliquables
+          suffisamment grandes et espacées.</p>
+
+        <h3>Applications mobiles</h3>
+        <p>Donner un nom clair aux liens, boutons et autres éléments interactifs. Rendre les zones tactiles suffisamment
+          grandes et espacées.</p>
+
+        <h3>Documents et communications</h3>
+        <p>Donner un nom clair aux liens.</p>
+
+        <h3>Maquettes graphiques</h3>
+        <p>Identifier et donner un nom clair aux liens, boutons et autres éléments interactifs. Définir leurs différents
+          états. Assurer des zones d'interaction suffisamment grandes et espacées.</p>
+      </section>
+
+      <footer></footer>
+    </article>
+
+  </main>
+
+  <footer class="container">
+    <dl>
+      <dt>Why <strong><dfn>Wha11y</dfn></strong>?</dt>
+      <dd>
+        <p>The <strong>Wh</strong> comes from question words such as:</p>
+
+        <ul>
+          <li><strong>Who</strong> may have a problem?</li>
+          <li><strong>What</strong> kind of problem?</li>
+          <li><strong>Why</strong> is it a barrier?</li>
+        </ul>
+
+        <p>
+          <strong>A11y</strong> is a short form of <em>accessibility</em>.
+          The <strong>11</strong> stands for the 11 letters between
+          the <strong>a</strong> and the <strong>y</strong>.
+        </p>
+      </dd>
+    </dl>
+
+    <aside>
+      <svg aria-hidden="true" focusable="false">
+        <use href="#logo"></use>
+      </svg>
+      <p><a href="https://github.com/christopherabate">@christopherabate</a> 2026</p>
+    </aside>
+  </footer>
+</body>
+
 </html>
